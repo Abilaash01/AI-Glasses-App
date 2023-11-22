@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "288383026522",
+    "project_id": "ai-glass",
+    "storage_bucket": "ai-glass.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288383026522:android:eebcfcec4f2d82095adf63",
+        "android_client_info": {
+          "package_name": "com.example.ai_glasses_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288383026522-qa8ngki5k75of6u0dhgodm94j0n7o14n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ai_glasses_app",
+            "certificate_hash": "33089b92ea2d827d95906cffc210621f3e944684"
+          }
+        },
+        {
+          "client_id": "288383026522-fa4i00nqo9evag2bv6n674vt967ej6nq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmSd0Vla275ze9iebyY2z8mxu_Z7BOHR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288383026522-fa4i00nqo9evag2bv6n674vt967ej6nq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
