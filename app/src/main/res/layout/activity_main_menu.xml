@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainMenuActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="LOG OUT"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <ImageButton
+        android:id="@+id/applicationSettings"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/baseline_settings_24"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <TextView
+        android:id="@+id/applicationSettingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Application Settings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <ImageButton
+        android:id="@+id/deviceSettings"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/baseline_bluetooth_24"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <TextView
+        android:id="@+id/deviceSettingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Device Settings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <ImageButton
+        android:id="@+id/realtimeViewer"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/baseline_closed_caption_24"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <TextView
+        android:id="@+id/realtimeViewerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Real-time Viewer"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <ImageButton
+        android:id="@+id/convHistory"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/baseline_history_24"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <TextView
+        android:id="@+id/mainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Main Menu"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/convHistoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Conversation History"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
