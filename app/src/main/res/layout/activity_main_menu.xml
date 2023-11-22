@@ -7,6 +7,18 @@
     android:background="@drawable/gradient_background"
     tools:context=".MainMenuActivity">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="LOG OUT"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="667dp" />
+
     <ImageButton
         android:id="@+id/applicationSettings"
         android:layout_width="125dp"
