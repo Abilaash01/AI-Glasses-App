@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Arrow-back button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="24sp"
+        android:onClick="goBackToHome"
+        android:background="#2196F3" <!-- Set button color to blue -->
+    android:textColor="#FFFFFF" />
+
+    <!-- Button for selecting language -->
+    <Button
+        android:id="@+id/languageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#41A9FB"
+        android:text="Select Language"
+        android:textColor="#FFFFFF" />
+
+    <!-- Button for selecting theme -->
+    <Button
+        android:id="@+id/themeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/languageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#41A9FB"
+        android:text="Select Theme"
+        android:textColor="#FFFFFF" />
+
+    <!-- Button for changing password -->
+    <Button
+        android:id="@+id/changePasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/themeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#41A9FB"
+        android:text="Change Password"
+        android:textColor="#FFFFFF" />
+
+    <!-- Button for notifications -->
+    <Button
+        android:id="@+id/notificationsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changePasswordButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#41A9FB"
+        android:text="Notifications"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
