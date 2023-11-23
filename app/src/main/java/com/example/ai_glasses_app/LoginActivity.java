@@ -32,8 +32,8 @@ public class LoginActivity extends AppCompatActivity {
                 if(editUser.getText().toString().equals("admin") && editPass.getText().toString().equals("admin123")) {
                     //correct
                     Toast.makeText(LoginActivity.this, "LOGIN SUCCESS", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                    startActivity(intent);
+                    Intent menuIntent = new Intent(getApplicationContext(), MainMenuActivity.class);
+                    startActivity(menuIntent);
                     finish();
                 } else {
                     //wrong
