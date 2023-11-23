@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin123")) {
                     //correct
                     Toast.makeText(MainActivity.this, "LOGIN SUCCESS", Toast.LENGTH_SHORT).show();
+                    Intent homeIntent = new Intent(MainActivity.this, HomeActivity.class);
+                    startActivity(homeIntent);
+                    finish();
                 } else {
                     //wrong
                     Toast.makeText(MainActivity.this, "LOGIN FAILED", Toast.LENGTH_SHORT).show();
