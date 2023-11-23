@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         TextView username = findViewById(R.id.username);
         TextView password = findViewById(R.id.password);
@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin123")) {
                     //correct
-                    Toast.makeText(MainActivity.this, "LOGIN SUCCESS", Toast.LENGTH_SHORT).show();
-                    Intent homeIntent = new Intent(MainActivity.this, HomeActivity.class);
-                    startActivity(homeIntent);
+                    Toast.makeText(MainActivity.this, "LOGIN SUC!!!!", Toast.LENGTH_SHORT).show();
+                    Intent menuIntent = new Intent(MainActivity.this, MainMenuActivity.class);
+                    startActivity(menuIntent);
                     finish();
                 } else {
                     //wrong
