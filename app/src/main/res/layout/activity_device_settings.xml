@@ -7,6 +7,43 @@
     android:background="@drawable/gradient_background"
     tools:context=".deviceSettings">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/manageConnectionsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="497dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Manage Connections"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <TextView
+        android:id="@+id/deviceTextDisplay"
+        android:layout_width="311dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="107dp"
+        android:background="@drawable/border"
+        android:gravity="center|end"
+        android:maxLength="40"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/deviceSettingsHeader"
         android:layout_width="match_parent"
@@ -29,5 +66,44 @@
         android:layout_marginEnd="309dp"
         android:layout_marginBottom="654dp"
         app:srcCompat="@drawable/baseline_bluetooth_24" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="276dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="403dp"
+        android:text="Conversation Logging"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="119dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="349dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="343dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Language Conversion"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000" />
 
 </RelativeLayout>
