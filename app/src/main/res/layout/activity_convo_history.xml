@@ -4,6 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/material_dynamic_primary20"
     tools:context=".ConvoHistory">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/layoutsend"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:background="@drawable/background_chat_input">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4sp"
+            android:layout_marginLeft="4sp"
+            android:padding="8sp"
+            android:src="@drawable/ic_send"
+            android:tint="@color/white"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/inputMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</>
