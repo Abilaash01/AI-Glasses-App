@@ -37,6 +37,8 @@
 
     <EditText
         android:id="@+id/password"
+        android:ems="10"
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/email"
@@ -49,7 +51,7 @@
         android:hint="Password"
         android:padding="20dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColorHint="@color/black"/>
 
     <Button
         android:id="@+id/loginbtn"
@@ -110,6 +112,7 @@
         android:backgroundTint="#0000BCD4"
         android:text="Create an Account"
         android:textColor="@color/black" />
+
 
 
 </RelativeLayout>

@@ -24,18 +24,18 @@ public class LoginActivity extends AppCompatActivity {
 
     Button loginbtn, createbtn;
 
-    FirebaseAuth mAuth;
+    private FirebaseAuth mAuth;
 
     @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-            startActivity(intent);
-            finish();
-        }
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        if(currentUser != null){
+//            Intent intent = new Intent(getApplicationContext(), deviceSettings.class);
+//            startActivity(intent);
+//            finish();
+//        }
     }
 
     @Override
@@ -67,35 +67,24 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
                 mAuth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(LoginActivity.this, "Login successful.",
-                                            Toast.LENGTH_SHORT).show();
+                    .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(LoginActivity.this, "Login successful.",
+                                        Toast.LENGTH_SHORT).show();
 
-                                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                                    startActivity(intent);
-                                    finish();
+                                Intent intent = new Intent(getApplicationContext(), deviceSettings.class);
+                                startActivity(intent);
+                                finish();
 
-                                } else {
-                                    // If sign in fails, display a message to the user.
-                                    Toast.makeText(LoginActivity.this, "Authentication failed.",
-                                            Toast.LENGTH_SHORT).show();
-
-                                }
+                            } else {
+                                // If sign in fails, display a message to the user.
+                                Toast.makeText(LoginActivity.this, "Authentication failed.",
+                                        Toast.LENGTH_SHORT).show();
                             }
-                        });
-                if(editEmail.getText().toString().equals("admin") && editPass.getText().toString().equals("admin123")) {
-                    //correct
-                    Toast.makeText(LoginActivity.this, "LOGIN SUCCESS", Toast.LENGTH_SHORT).show();
-                    Intent menuIntent = new Intent(getApplicationContext(), MainMenuActivity.class);
-                    startActivity(menuIntent);
-                    finish();
-                } else {
-                    //wrong
-                    Toast.makeText(LoginActivity.this, "LOGIN FAILED", Toast.LENGTH_SHORT).show();
-                }
+                        }
+                    });
             }
         });
 
