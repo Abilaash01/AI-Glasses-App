@@ -7,11 +7,17 @@
     android:background="@drawable/gradient_background"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/background" />
+
     <TextView
         android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:gravity="center"
         android:text="AI Glasses"
         android:textColor="@color/black"
@@ -24,8 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/signin"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginTop="80dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/rounded_edittext"
         android:drawableLeft="@drawable/baseline_email_24"
@@ -61,7 +67,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:backgroundTint="#00BCD4"
+        android:backgroundTint="#002751"
         android:text="LOGIN" />
 
     <TextView
@@ -80,7 +86,7 @@
         android:layout_below="@id/forgotpass"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
         android:text="or sign in with"
@@ -97,16 +103,15 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/icons8google"/>
+            android:src="@drawable/icons8google" />
     </LinearLayout>
 
     <Button
         android:id="@+id/registerbtn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/socialicons"
-        android:layout_marginTop="100dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-358dp"
         android:backgroundTint="#0000BCD4"
         android:text="Create an Account"
         android:textColor="@color/black" />

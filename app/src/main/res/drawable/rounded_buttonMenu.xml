@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/> <!-- Adjust for rounded corners -->
+            <solid android:color="#FFFFFFFF"/> <!-- Background color -->
+            <!-- If you want a shadow, you'll need to use elevation in the button properties -->
+            <!-- If you want a gradient, you can define a <gradient> element here -->
+        </shape>
+    </item>
+</selector>

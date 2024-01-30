@@ -4,163 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@drawable/gradient_background2"
     tools:context=".MainMenuActivity">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/logoutbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/password"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:backgroundTint="@color/design_default_color_secondary"
-        android:text="LOG OUT"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.881"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926" />
-
-    <ImageButton
-        android:id="@+id/applicationSettings"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:background="@drawable/rounded_edittext"
-        android:padding="0dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/baseline_settings_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.874"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
-
-    <TextView
-        android:id="@+id/applicationSettingsText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:text="Application Settings"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.734" />
-
-    <ImageButton
-        android:id="@+id/deviceSettings"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:background="@drawable/rounded_edittext"
-        android:padding="0dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/baseline_bluetooth_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
-
-    <TextView
-        android:id="@+id/deviceSettingsText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:text="Device Settings"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.734" />
-
-    <ImageButton
-        android:id="@+id/realtimeViewer"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:background="@drawable/rounded_edittext"
-        android:padding="0dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/baseline_closed_caption_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.874"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
-
-    <TextView
-        android:id="@+id/realtimeViewerText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:text="Real-time Viewer"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
-
-    <ImageButton
-        android:id="@+id/convHistory"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:background="@drawable/rounded_edittext"
-        android:padding="0dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/baseline_history_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
-
-    <TextView
-        android:id="@+id/mainMenu"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Main Menu"
-        android:textColor="@color/black"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042" />
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background2"
+        tools:context=".MainMenuActivity">
 
-    <TextView
-        android:id="@+id/convHistoryText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:text="Conversation History"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
+        <Button
+            android:id="@+id/button1"
+            style="@style/RoundedButton"
+            android:layout_width="172dp"
+            android:layout_height="232dp"
+            android:layout_margin="8dp"
+            android:drawableStart="@drawable/logo"
+            android:drawablePadding="10dp"
+            android:elevation="4dp"
+            android:text="LOREM IPSUM"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="461dp" />
 
+        <Button
+            android:id="@+id/button2"
+            style="@style/RoundedButton"
+            android:layout_width="172dp"
+            android:layout_height="232dp"
+            android:layout_margin="8dp"
+            android:drawableStart="@drawable/logo"
+            android:drawablePadding="10dp"
+            android:elevation="4dp"
+            android:drawableTop="@drawable/logo"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="195dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="236dp"
+            android:layout_height="590dp"
+            app:srcCompat="@drawable/logo2"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="-225dp" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/RoundedButton"
+            android:layout_width="172dp"
+            android:layout_height="232dp"
+            android:layout_margin="8dp"
+            android:drawableStart="@drawable/logo"
+            android:drawablePadding="10dp"
+            android:elevation="4dp"
+            android:text="LOREM IPSUM"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="195dp" />
+
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/RoundedButton"
+        android:layout_width="172dp"
+        android:layout_height="232dp"
+        android:layout_margin="8dp"
+        android:drawableStart="@drawable/logo"
+        android:drawablePadding="10dp"
+        android:elevation="4dp"
+        android:text="LOREM IPSUM"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/RoundedButton"
+        android:layout_width="172dp"
+        android:layout_height="232dp"
+        android:layout_margin="8dp"
+        android:drawableStart="@drawable/logo"
+        android:drawablePadding="10dp"
+        android:elevation="4dp"
+        android:text="LOREM IPSUM"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/RoundedButton"
+        android:layout_width="172dp"
+        android:layout_height="232dp"
+        android:layout_margin="8dp"
+        android:drawableStart="@drawable/logo"
+        android:drawablePadding="10dp"
+        android:elevation="4dp"
+        android:text="LOREM IPSUM"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="195dp" />
+    <!-- Additional attributes can be added here if needed -->
 </androidx.constraintlayout.widget.ConstraintLayout>

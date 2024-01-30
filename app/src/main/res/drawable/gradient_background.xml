@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient
-        android:startColor="#FDF4C4"
-        android:endColor="#FBC6C6"
-        android:type="linear"
-        android:angle="45" />
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- White background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+    <!-- Adjusted Wave part of the background -->
+    <item>
+        <bitmap
+            android:gravity="fill"
+            android:src="@drawable/wave_pattern"
+            android:tileMode="repeat"
+            android:bottom="2dp" /> <!-- You can adjust this value as needed -->
+    </item>
+</layer-list>
+
